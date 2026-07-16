@@ -1,4 +1,4 @@
-import { schoolInfo, stats } from "../data/schoolData";
+import { schoolInfo, stats, schoolImages } from "../data/schoolData";
 
 export default function Hero() {
   return (
@@ -68,26 +68,26 @@ export default function Hero() {
 
         <div className="flex-1">
           <div className="relative mx-auto max-w-md">
-            <div className="rounded-2xl border border-white/10 bg-white/5 p-8 backdrop-blur-sm">
-              <div className="mb-6 flex h-24 w-24 items-center justify-center rounded-2xl bg-school-gold text-3xl font-black text-school-navy shadow-xl">
-                KD
-              </div>
-              <h2 className="text-xl font-bold text-white">
-                {schoolInfo.alternateName}
-              </h2>
-              <p className="mt-2 text-sm text-white/70">
-                {schoolInfo.address.full}
-              </p>
-              <a
-                href={`tel:${schoolInfo.contact.phoneRaw}`}
-                className="mt-6 flex items-center gap-2 text-school-gold hover:underline"
-              >
-                <span>📞</span>
-                <span className="font-semibold">{schoolInfo.contact.phone}</span>
-              </a>
+            <div className="absolute -left-4 -top-4 h-full w-full rounded-3xl bg-school-gold/20" />
+            <img
+              src={schoolImages.campus}
+              alt="K.D Public School campus"
+              className="relative h-80 w-full rounded-3xl object-cover shadow-2xl sm:h-96"
+            />
+            <div className="absolute -bottom-4 -right-4 overflow-hidden rounded-2xl border-4 border-white shadow-xl">
+              <img
+                src={schoolImages.assembly}
+                alt="Students at K.D Public School"
+                className="h-28 w-36 object-cover sm:h-32 sm:w-44"
+              />
             </div>
 
-            <div className="absolute -bottom-4 -right-4 rounded-xl bg-white px-4 py-3 shadow-xl">
+            <div className="absolute left-4 top-4 rounded-xl bg-school-navy/90 px-4 py-3 text-white shadow-lg backdrop-blur-sm">
+              <p className="text-xs font-medium text-school-gold">CBSE School</p>
+              <p className="text-sm font-bold">Fazilnagar</p>
+            </div>
+
+            <div className="absolute -bottom-4 -left-4 rounded-xl bg-white px-4 py-3 shadow-xl">
               <p className="text-xs font-medium text-gray-500">Popularity Rank</p>
               <p className="text-lg font-bold text-school-navy">
                 {schoolInfo.rankings.popularityRank}

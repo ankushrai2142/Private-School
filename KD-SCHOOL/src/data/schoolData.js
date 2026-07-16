@@ -1,36 +1,57 @@
+import img1 from "../assets/images/p-1.jpeg";
+import img2 from "../assets/images/p-2.jpeg";
+import img3 from "../assets/images/p-3.jpeg";
+import img4 from "../assets/images/p-4.jpeg";
+import img5 from "../assets/images/p-5.jpeg";
+import img6 from "../assets/images/p-6.jpeg";
+
+export const schoolImages = {
+  assembly: img1,
+  campus: img2,
+  morningAssembly: img3,
+  students: img4,
+  activities: img5,
+  entrance: img6,
+};
+
 export const aboutImages = {
-  campus:
-    "https://images.unsplash.com/photo-1562774053-701939374585?w=900&h=600&fit=crop&q=80",
-  classroom:
-    "https://images.unsplash.com/photo-1580582932707-520aed937b7b?w=900&h=600&fit=crop&q=80",
-  students:
-    "https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=900&h=600&fit=crop&q=80",
-  library:
-    "https://images.unsplash.com/photo-1497633767263-c8a055fb4d77?w=900&h=600&fit=crop&q=80",
-  activities:
-    "https://images.unsplash.com/photo-1509062522246-3755977927d7?w=900&h=600&fit=crop&q=80",
+  campus: img2,
+  students: img1,
+  classroom: img3,
+  library: img6,
+  activities: img5,
 };
 
 export const galleryImages = [
   {
-    src: aboutImages.classroom,
-    title: "Smart Classrooms",
-    caption: "Modern learning spaces for every student",
+    src: img2,
+    title: "School Campus",
+    caption: "K.D Public School, Fazilnagar",
   },
   {
-    src: aboutImages.students,
-    title: "Happy Learners",
-    caption: "Building confidence through quality education",
+    src: img1,
+    title: "Morning Assembly",
+    caption: "Students gathered for daily assembly",
   },
   {
-    src: aboutImages.activities,
-    title: "Active Learning",
-    caption: "Engaging activities beyond textbooks",
+    src: img6,
+    title: "School Entrance",
+    caption: "Welcome to K.D Public School",
   },
   {
-    src: aboutImages.library,
-    title: "Knowledge Hub",
-    caption: "A culture of reading and curiosity",
+    src: img4,
+    title: "Our Students",
+    caption: "Disciplined and dedicated learners",
+  },
+  {
+    src: img5,
+    title: "Student Activities",
+    caption: "Building character through discipline",
+  },
+  {
+    src: img3,
+    title: "Campus Life",
+    caption: "A vibrant learning community",
   },
 ];
 
