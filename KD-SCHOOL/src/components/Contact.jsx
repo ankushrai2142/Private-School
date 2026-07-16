@@ -53,7 +53,7 @@ const contactDetails = [
 
 const quickInfo = [
   { icon: "🕐", label: "Mon – Sat", value: "9 AM – 6 PM" },
-  { icon: "📚", label: "Board", value: "CBSE" },
+  { icon: "📚", label: "Board", value: schoolInfo.board },
   { icon: "📌", label: "District", value: "Kushinagar" },
 ];
 

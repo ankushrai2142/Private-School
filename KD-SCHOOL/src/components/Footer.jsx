@@ -69,7 +69,7 @@ export default function Footer() {
                 K.D.Public School
               </p>
               <p className="mt-1 text-lg font-bold text-white">
-                CBSE Education in Fazilnagar, Kushinagar
+                {schoolInfo.boardShort} Education in Fazilnagar, Kushinagar
               </p>
               <p className="mt-1 text-sm text-white/60">
                 {schoolInfo.rating.label}
@@ -115,12 +115,13 @@ export default function Footer() {
               </div>
             </div>
             <p className="mt-5 text-sm leading-relaxed text-white/65">
-              Quality CBSE education for holistic development. Serving Fazilnagar
+              Quality education following UP Board NCERT Pattern for holistic
+              development. Serving Fazilnagar
               and surrounding villages in Kushinagar, Uttar Pradesh.
             </p>
             <div className="mt-5 inline-flex items-center gap-2 rounded-full border border-school-gold/30 bg-school-gold/10 px-3 py-1 text-xs font-semibold text-school-gold">
               <span className="h-1.5 w-1.5 animate-pulse rounded-full bg-school-gold" />
-              CBSE Affiliated
+              {schoolInfo.boardShort}
             </div>
           </div>
 

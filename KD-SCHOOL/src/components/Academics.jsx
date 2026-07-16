@@ -20,7 +20,7 @@ const programMeta = [
 ];
 
 const highlights = [
-  { icon: "📚", label: "CBSE Curriculum" },
+  { icon: "📚", label: "UP Board NCERT Pattern" },
   { icon: "👨‍🏫", label: "Expert Faculty" },
   { icon: "🏆", label: "Result Oriented" },
   { icon: "🎨", label: "Co-curricular Activities" },
@@ -88,8 +88,8 @@ export default function Academics() {
             </span>
           </h2>
           <p className="mx-auto mt-5 max-w-2xl text-base leading-relaxed text-gray-600">
-            Structured CBSE programs from primary to secondary level for holistic
-            student development.
+            Structured UP Board NCERT Pattern programs from primary to secondary
+            level for holistic student development.
           </p>
         </div>
 
@@ -204,7 +204,7 @@ export default function Academics() {
               icon: "🎓",
             },
             {
-              value: "CBSE Board",
+              value: schoolInfo.board,
               label: "Affiliated Curriculum",
               icon: "📜",
             },
@@ -245,14 +245,15 @@ export default function Academics() {
 
           <div className="relative px-8 py-10 text-center sm:px-12 sm:py-12">
             <span className="inline-block rounded-full border border-school-gold/30 bg-school-gold/10 px-4 py-1 text-xs font-bold uppercase tracking-widest text-school-gold">
-              CBSE Affiliated
+              {schoolInfo.boardShort}
             </span>
             <h3 className="mt-4 text-2xl font-bold text-white sm:text-3xl">
               <span className="text-school-gold">{schoolInfo.name}</span>
             </h3>
             <p className="mx-auto mt-4 max-w-2xl text-sm leading-relaxed text-white/75 sm:text-base">
-              Offering quality CBSE education from primary through secondary
-              levels for students in the Fazilnagar, Babu Bazar region.
+              Offering quality education following UP Board NCERT Pattern from
+              primary through secondary levels for students in the Fazilnagar,
+              Babu Bazar region.
             </p>
 
             <div className="mt-8 flex flex-wrap items-center justify-center gap-4">

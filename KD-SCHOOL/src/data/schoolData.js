@@ -59,6 +59,8 @@ export const schoolInfo = {
   name: "K.D.Public School",
   fullName: "K.D.PUBLIC SCHOOL, FAZILNAGAR, KUSHINAGAR (U.P.)",
   tagline: "Nurturing Minds, Building Futures",
+  board: "UP Board (NCERT Pattern)",
+  boardShort: "UP Board NCERT Pattern",
   description:
     "K.D.Public School is a reputed educational institution located in Fazilnagar, Kushinagar, Uttar Pradesh. Committed to providing quality education and holistic development, the school serves students from Fazilnagar, Babu Bazar, and surrounding villages in the Kushinagar district.",
   address: {
@@ -151,7 +153,7 @@ export const facilities = [
   {
     title: "Quality Education",
     description:
-      "Structured CBSE curriculum for strong foundational learning and academic excellence.",
+      "Structured UP Board NCERT Pattern curriculum for strong foundational learning and academic excellence.",
     icon: "🎓",
   },
   {

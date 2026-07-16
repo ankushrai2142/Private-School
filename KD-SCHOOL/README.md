@@ -11,7 +11,7 @@ Built with React, Vite, and Tailwind CSS.
 - **Address:** Fazilnagar, Babu Bazar, Kushinagar, Uttar Pradesh 274401
 - **Phone:** +91 74085 31545
 - **Rating:** 4.3 ★ (4 reviews)
-- **Board:** CBSE
+- **Board:** UP Board (NCERT Pattern)
 
 ## Getting Started
 

@@ -83,7 +83,7 @@ export default function Hero() {
             </div>
 
             <div className="absolute left-4 top-4 rounded-xl bg-school-navy/90 px-4 py-3 text-white shadow-lg backdrop-blur-sm">
-              <p className="text-xs font-medium text-school-gold">CBSE School</p>
+              <p className="text-xs font-medium text-school-gold">{schoolInfo.boardShort}</p>
               <p className="text-sm font-bold">Fazilnagar</p>
             </div>
 
