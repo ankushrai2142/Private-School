@@ -1,0 +1,20 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Segoe UI", system-ui, -apple-system, sans-serif;
+  --color-school-navy: #0c2340;
+  --color-school-blue: #1a4a8a;
+  --color-school-gold: #c9a227;
+  --color-school-cream: #faf8f3;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-sans);
+  background-color: var(--color-school-cream);
+  color: #1e293b;
+}
