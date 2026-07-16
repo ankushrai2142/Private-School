@@ -88,8 +88,8 @@ export default function Academics() {
             </span>
           </h2>
           <p className="mx-auto mt-5 max-w-2xl text-base leading-relaxed text-gray-600">
-            Structured programs from primary to intermediate level, aligned with
-            CBSE Board standards for holistic student development.
+            Structured CBSE programs from primary to secondary level for holistic
+            student development.
           </p>
         </div>
 
@@ -230,7 +230,7 @@ export default function Academics() {
           ))}
         </div>
 
-        {/* Intermediate college banner */}
+        {/* School banner */}
         <div
           className={`relative mt-16 overflow-hidden rounded-3xl transition-all duration-1000 delay-700 ${
             isVisible ? "scale-100 opacity-100" : "scale-95 opacity-0"
@@ -245,16 +245,14 @@ export default function Academics() {
 
           <div className="relative px-8 py-10 text-center sm:px-12 sm:py-12">
             <span className="inline-block rounded-full border border-school-gold/30 bg-school-gold/10 px-4 py-1 text-xs font-bold uppercase tracking-widest text-school-gold">
-              Recognized Institution
+              CBSE Affiliated
             </span>
             <h3 className="mt-4 text-2xl font-bold text-white sm:text-3xl">
-              Also Known As:{" "}
-              <span className="text-school-gold">{schoolInfo.alternateName}</span>
+              <span className="text-school-gold">{schoolInfo.name}</span>
             </h3>
             <p className="mx-auto mt-4 max-w-2xl text-sm leading-relaxed text-white/75 sm:text-base">
-              The institution is recognized locally as both K.D Public School and
-              K.D Public Intermediate College, offering education from primary
-              through intermediate levels for students in the Fazilnagar region.
+              Offering quality CBSE education from primary through secondary
+              levels for students in the Fazilnagar, Babu Bazar region.
             </p>
 
             <div className="mt-8 flex flex-wrap items-center justify-center gap-4">

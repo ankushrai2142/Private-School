@@ -3,7 +3,7 @@ import WhatsAppIcon from "./icons/WhatsAppIcon";
 
 export default function WhatsAppFloat() {
   const message = encodeURIComponent(
-    "Hello, I would like to inquire about admission at K.D Public School, Fazilnagar."
+    "Hello, I would like to inquire about admission at K.D.Public School, Fazilnagar."
   );
 
   return (

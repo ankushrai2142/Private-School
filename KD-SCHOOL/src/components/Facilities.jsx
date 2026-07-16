@@ -71,7 +71,7 @@ export default function Facilities() {
             </span>
           </h2>
           <p className="mx-auto mt-4 max-w-2xl text-gray-600">
-            K.D Public School offers a supportive learning environment with
+            K.D.Public School offers a supportive learning environment with
             modern facilities designed for the complete development of every
             student.
           </p>

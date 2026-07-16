@@ -66,7 +66,7 @@ export default function Footer() {
           <div className="flex flex-col items-center gap-6 sm:flex-row sm:justify-between">
             <div className="text-center sm:text-left">
               <p className="text-sm font-semibold uppercase tracking-widest text-school-gold">
-                K.D Public School
+                K.D.Public School
               </p>
               <p className="mt-1 text-lg font-bold text-white">
                 CBSE Education in Fazilnagar, Kushinagar
@@ -189,7 +189,7 @@ export default function Footer() {
               Find Us
             </h4>
             <p className="mt-5 text-sm leading-relaxed text-white/65">
-              {schoolInfo.alternateName}
+              {schoolInfo.fullName}
             </p>
             <div className="mt-5 space-y-3">
               <a

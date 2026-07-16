@@ -23,13 +23,13 @@ export default function About() {
             <div className="absolute -left-4 -top-4 h-full w-full rounded-3xl bg-school-gold/20" />
             <img
               src={aboutImages.campus}
-              alt="K.D Public School campus"
+              alt="K.D.Public School campus"
               className="relative h-72 w-full rounded-3xl object-cover shadow-2xl sm:h-96"
             />
             <div className="absolute -bottom-6 -right-4 overflow-hidden rounded-2xl border-4 border-white shadow-xl sm:-right-8">
               <img
                 src={aboutImages.students}
-                alt="Students at K.D Public School"
+                alt="Students at K.D.Public School"
                 className="h-32 w-44 object-cover sm:h-40 sm:w-52"
               />
             </div>
@@ -122,7 +122,7 @@ export default function About() {
               </span>
               <p className="mt-4 leading-relaxed text-white/90">
                 To provide accessible, quality education that empowers students
-                from Fazilnagar, Banbira, and nearby villages with knowledge,
+                from Fazilnagar, Babu Bazar, and nearby villages with knowledge,
                 values, and skills needed to succeed in life.
               </p>
             </div>

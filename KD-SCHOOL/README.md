@@ -1,17 +1,17 @@
-# K.D Public School Website
+# K.D.Public School Website
 
 live preview(https://private-school-self.vercel.app/)
 
-Official website for **K.D PUBLIC SCHOOL, FAZILNAGAR, KUSHINAGAR (U.P.)**
+Official website for **K.D.PUBLIC SCHOOL, FAZILNAGAR, KUSHINAGAR (U.P.)**
 
 Built with React, Vite, and Tailwind CSS.
 
 ## School Details
 
-- **Address:** Fazilnagar, Banbira, Kushinagar, Uttar Pradesh 274401
+- **Address:** Fazilnagar, Babu Bazar, Kushinagar, Uttar Pradesh 274401
 - **Phone:** +91 74085 31545
 - **Rating:** 4.3 ★ (4 reviews)
-- **Also known as:** K.D Public Intermediate College
+- **Board:** CBSE
 
 ## Getting Started
 

@@ -1,13 +1,14 @@
 import { useEffect, useRef, useState } from "react";
-import { schoolInfo } from "../data/schoolData";
+import { schoolInfo, schoolImages } from "../data/schoolData";
 import WhatsAppIcon from "./icons/WhatsAppIcon";
+import admissionVideo from "../assets/images/WhatsApp Video 2026-07-16 at 5.52.18 PM.mp4";
 
 const steps = [
   {
     step: "01",
     title: "Visit the School",
     description:
-      "Visit K.D Public School at Fazilnagar, Kushinagar during office hours to collect the admission form.",
+      "Visit K.D.Public School at Fazilnagar, Kushinagar during office hours to collect the admission form.",
     icon: "🏫",
   },
   {
@@ -95,7 +96,7 @@ export default function Admission() {
           <h2 className="mt-6 text-3xl font-bold text-school-navy sm:text-5xl">
             Join{" "}
             <span className="bg-gradient-to-r from-school-gold via-amber-300 to-school-gold bg-clip-text text-transparent animate-shimmer">
-              K.D Public School
+              K.D.Public School
             </span>
           </h2>
           <p className="mx-auto mt-5 max-w-2xl text-base leading-relaxed text-gray-600">
@@ -167,6 +168,51 @@ export default function Admission() {
               </div>
             </div>
           ))}
+        </div>
+
+        {/* School video */}
+        <div
+          className={`mt-20 transition-all duration-1000 delay-500 ${
+            isVisible ? "translate-y-0 opacity-100" : "translate-y-10 opacity-0"
+          }`}
+        >
+          <div className="mb-8 text-center">
+            <span className="text-sm font-semibold uppercase tracking-widest text-school-gold">
+              Campus Tour
+            </span>
+            <h3 className="mt-2 text-2xl font-bold text-school-navy sm:text-3xl">
+              Experience K.D.Public School
+            </h3>
+            <p className="mx-auto mt-3 max-w-xl text-sm text-gray-600">
+              Watch a glimpse of our school campus, students, and learning
+              environment at Fazilnagar, Kushinagar.
+            </p>
+          </div>
+
+          <div className="relative mx-auto max-w-4xl">
+            <div className="absolute -inset-1 rounded-3xl bg-gradient-to-br from-school-gold/50 via-school-navy/30 to-school-blue/50 opacity-70 blur-sm" />
+            <div className="relative overflow-hidden rounded-3xl border border-school-gold/20 bg-school-navy shadow-2xl">
+              <div className="flex items-center justify-between border-b border-white/10 px-5 py-3">
+                <div className="flex items-center gap-2">
+                  <span className="flex h-2.5 w-2.5 animate-pulse rounded-full bg-red-500" />
+                  <p className="text-sm font-semibold text-white">
+                    School Video
+                  </p>
+                </div>
+                <span className="text-xs text-school-gold">K.D.Public School</span>
+              </div>
+              <video
+                className="aspect-video w-full bg-black object-cover"
+                controls
+                playsInline
+                preload="metadata"
+                poster={schoolImages.campus}
+              >
+                <source src={admissionVideo} type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
+            </div>
+          </div>
         </div>
 
         {/* Documents + Info panel */}

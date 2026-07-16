@@ -26,7 +26,7 @@ export const galleryImages = [
   {
     src: img2,
     title: "School Campus",
-    caption: "K.D Public School, Fazilnagar",
+    caption: "K.D.Public School, Fazilnagar",
   },
   {
     src: img1,
@@ -36,7 +36,7 @@ export const galleryImages = [
   {
     src: img6,
     title: "School Entrance",
-    caption: "Welcome to K.D Public School",
+    caption: "Welcome to K.D.Public School",
   },
   {
     src: img4,
@@ -56,17 +56,16 @@ export const galleryImages = [
 ];
 
 export const schoolInfo = {
-  name: "K.D Public School",
-  fullName: "K.D PUBLIC SCHOOL, FAZILNAGAR, KUSHINAGAR (U.P.)",
-  alternateName: "K.D Public Intermediate College",
+  name: "K.D.Public School",
+  fullName: "K.D.PUBLIC SCHOOL, FAZILNAGAR, KUSHINAGAR (U.P.)",
   tagline: "Nurturing Minds, Building Futures",
   description:
-    "K.D Public School is a reputed educational institution located in Fazilnagar, Kushinagar, Uttar Pradesh. Committed to providing quality education and holistic development, the school serves students from Fazilnagar, Banbira, and surrounding villages in the Kushinagar district.",
+    "K.D.Public School is a reputed educational institution located in Fazilnagar, Kushinagar, Uttar Pradesh. Committed to providing quality education and holistic development, the school serves students from Fazilnagar, Babu Bazar, and surrounding villages in the Kushinagar district.",
   address: {
-    line1: "Fazilnagar, Banbira",
+    line1: "Fazilnagar, Babu Bazar",
     line2: "Kushinagar, Uttar Pradesh",
     pincode: "274401",
-    full: "Fazilnagar, Banbira, Kushinagar, Uttar Pradesh 274401",
+    full: "Fazilnagar, Babu Bazar, Kushinagar, Uttar Pradesh 274401",
   },
   contact: {
     phone: "+91 74085 31545",
@@ -85,7 +84,7 @@ export const schoolInfo = {
     indiaRank: "Top 23.54% schools in India",
   },
   serviceAreas: [
-    "Banbira",
+    "Babu Bazar",
     "Fazilnagar",
     "Belwa Karkhana",
     "Bhatahi Khurd",
@@ -176,12 +175,6 @@ export const academics = [
     description:
       "Expanded curriculum with science, mathematics, languages, and co-curricular activities.",
   },
-  // {
-  //   level: "Secondary & Intermediate",
-  //   grades: "Classes IX – XII",
-  //   description:
-  //     "Board examination preparation with emphasis on career readiness and life skills.",
-  // },
 ];
 
 export const stats = [

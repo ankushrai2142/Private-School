@@ -3,7 +3,7 @@ import { navLinks, schoolInfo } from "../data/schoolData";
 import WhatsAppIcon from "./icons/WhatsAppIcon";
 
 const whatsappUrl = `https://wa.me/${schoolInfo.contact.whatsapp}?text=${encodeURIComponent(
-  "Hello, I would like to inquire about admission at K.D Public School, Fazilnagar."
+  "Hello, I would like to inquire about admission at K.D.Public School, Fazilnagar."
 )}`;
 
 export default function Navbar() {

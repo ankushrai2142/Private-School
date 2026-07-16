@@ -46,21 +46,13 @@ const contactDetails = [
   {
     icon: "🏫",
     title: "Institution",
-    content: (
-      <>
-        {schoolInfo.fullName}
-        <br />
-        <span className="text-gray-500">
-          Also known as: {schoolInfo.alternateName}
-        </span>
-      </>
-    ),
+    content: schoolInfo.fullName,
     color: "from-violet-600 to-school-blue",
   },
 ];
 
 const quickInfo = [
-  { icon: "🕐", label: "Mon – Sat", value: "9 AM – 3 PM" },
+  { icon: "🕐", label: "Mon – Sat", value: "9 AM – 6 PM" },
   { icon: "📚", label: "Board", value: "CBSE" },
   { icon: "📌", label: "District", value: "Kushinagar" },
 ];
@@ -231,7 +223,7 @@ export default function Contact() {
                 <span className="text-xs text-school-gold">Fazilnagar, 274401</span>
               </div>
               <iframe
-                title="K.D Public School Location Map"
+                title="K.D.Public School Location Map"
                 src={schoolInfo.mapEmbedUrl}
                 width="100%"
                 height="420"
@@ -250,7 +242,7 @@ export default function Contact() {
             >
               <span className="text-lg">📍</span>
               <div>
-                <p className="text-xs font-bold text-school-navy">K.D Public School</p>
+                <p className="text-xs font-bold text-school-navy">K.D.Public School</p>
                 <p className="text-[10px] text-gray-400">Kushinagar, U.P.</p>
               </div>
             </div>

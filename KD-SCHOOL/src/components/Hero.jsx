@@ -71,13 +71,13 @@ export default function Hero() {
             <div className="absolute -left-4 -top-4 h-full w-full rounded-3xl bg-school-gold/20" />
             <img
               src={schoolImages.campus}
-              alt="K.D Public School campus"
+              alt="K.D.Public School campus"
               className="relative h-80 w-full rounded-3xl object-cover shadow-2xl sm:h-96"
             />
             <div className="absolute -bottom-4 -right-4 overflow-hidden rounded-2xl border-4 border-white shadow-xl">
               <img
                 src={schoolImages.assembly}
-                alt="Students at K.D Public School"
+                alt="Students at K.D.Public School"
                 className="h-28 w-36 object-cover sm:h-32 sm:w-44"
               />
             </div>
