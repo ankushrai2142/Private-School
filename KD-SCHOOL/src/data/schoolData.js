@@ -1,3 +1,39 @@
+export const aboutImages = {
+  campus:
+    "https://images.unsplash.com/photo-1562774053-701939374585?w=900&h=600&fit=crop&q=80",
+  classroom:
+    "https://images.unsplash.com/photo-1580582932707-520aed937b7b?w=900&h=600&fit=crop&q=80",
+  students:
+    "https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=900&h=600&fit=crop&q=80",
+  library:
+    "https://images.unsplash.com/photo-1497633767263-c8a055fb4d77?w=900&h=600&fit=crop&q=80",
+  activities:
+    "https://images.unsplash.com/photo-1509062522246-3755977927d7?w=900&h=600&fit=crop&q=80",
+};
+
+export const galleryImages = [
+  {
+    src: aboutImages.classroom,
+    title: "Smart Classrooms",
+    caption: "Modern learning spaces for every student",
+  },
+  {
+    src: aboutImages.students,
+    title: "Happy Learners",
+    caption: "Building confidence through quality education",
+  },
+  {
+    src: aboutImages.activities,
+    title: "Active Learning",
+    caption: "Engaging activities beyond textbooks",
+  },
+  {
+    src: aboutImages.library,
+    title: "Knowledge Hub",
+    caption: "A culture of reading and curiosity",
+  },
+];
+
 export const schoolInfo = {
   name: "K.D Public School",
   fullName: "K.D PUBLIC SCHOOL, FAZILNAGAR, KUSHINAGAR (U.P.)",
@@ -95,7 +131,7 @@ export const facilities = [
   {
     title: "Quality Education",
     description:
-      "Structured curriculum aligned with state standards for strong foundational learning.",
+      "Structured CBSE curriculum for strong foundational learning and academic excellence.",
     icon: "🎓",
   },
   {
@@ -119,12 +155,12 @@ export const academics = [
     description:
       "Expanded curriculum with science, mathematics, languages, and co-curricular activities.",
   },
-  {
-    level: "Secondary & Intermediate",
-    grades: "Classes IX – XII",
-    description:
-      "Board examination preparation with emphasis on career readiness and life skills.",
-  },
+  // {
+  //   level: "Secondary & Intermediate",
+  //   grades: "Classes IX – XII",
+  //   description:
+  //     "Board examination preparation with emphasis on career readiness and life skills.",
+  // },
 ];
 
 export const stats = [

@@ -6,6 +6,7 @@ import Academics from "./components/Academics";
 import Admission from "./components/Admission";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
+import WhatsAppFloat from "./components/WhatsAppFloat";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
         <Contact />
       </main>
       <Footer />
+      <WhatsAppFloat />
     </>
   );
 }

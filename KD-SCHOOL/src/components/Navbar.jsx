@@ -1,5 +1,10 @@
 import { useState } from "react";
 import { navLinks, schoolInfo } from "../data/schoolData";
+import WhatsAppIcon from "./icons/WhatsAppIcon";
+
+const whatsappUrl = `https://wa.me/${schoolInfo.contact.whatsapp}?text=${encodeURIComponent(
+  "Hello, I would like to inquire about admission at K.D Public School, Fazilnagar."
+)}`;
 
 export default function Navbar() {
   const [open, setOpen] = useState(false);
@@ -33,10 +38,13 @@ export default function Navbar() {
         </ul>
 
         <a
-          href={`tel:${schoolInfo.contact.phoneRaw}`}
-          className="hidden rounded-full bg-school-gold px-5 py-2 text-sm font-semibold text-school-navy transition hover:bg-yellow-400 md:inline-block"
+          href={whatsappUrl}
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Chat on WhatsApp"
+          className="hidden h-11 w-11 items-center justify-center rounded-full bg-[#25D366] text-white shadow-md transition hover:scale-105 hover:bg-[#20bd5a] md:inline-flex"
         >
-          Call Now
+          <WhatsAppIcon className="h-6 w-6" />
         </a>
 
         <button
@@ -71,10 +79,14 @@ export default function Navbar() {
             ))}
             <li>
               <a
-                href={`tel:${schoolInfo.contact.phoneRaw}`}
-                className="mt-2 block rounded-full bg-school-gold px-5 py-2 text-center text-sm font-semibold text-school-navy"
+                href={whatsappUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="mt-2 flex items-center justify-center gap-2 rounded-full bg-[#25D366] px-5 py-2.5 text-sm font-semibold text-white"
+                onClick={() => setOpen(false)}
               >
-                Call {schoolInfo.contact.phone}
+                <WhatsAppIcon className="h-5 w-5" />
+                WhatsApp
               </a>
             </li>
           </ul>
