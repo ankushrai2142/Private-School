@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { navLinks, schoolInfo } from "../data/schoolData";
+import logo from "../assets/images/LOGO.jpeg";
 import WhatsAppIcon from "./icons/WhatsAppIcon";
 
 const whatsappUrl = `https://wa.me/${schoolInfo.contact.whatsapp}?text=${encodeURIComponent(
@@ -13,9 +14,11 @@ export default function Navbar() {
     <header className="fixed top-0 left-0 right-0 z-50 bg-school-navy/95 backdrop-blur-md shadow-lg">
       <nav className="mx-auto flex max-w-7xl items-center justify-between px-4 py-3 sm:px-6 lg:px-8">
         <a href="#home" className="flex items-center gap-3">
-          <div className="flex h-11 w-11 items-center justify-center rounded-full bg-school-gold text-lg font-bold text-school-navy">
-            KD
-          </div>
+          <img
+            src={logo}
+            alt={`${schoolInfo.name} logo`}
+            className="h-12 w-12 rounded-full object-cover ring-2 ring-school-gold/40"
+          />
           <div className="hidden sm:block">
             <p className="text-sm font-bold leading-tight text-white">
               {schoolInfo.name}

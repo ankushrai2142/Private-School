@@ -269,6 +269,12 @@ export default function Academics() {
               >
                 📞 {schoolInfo.contact.phone}
               </a>
+              <a
+                href={`tel:${schoolInfo.contact.phone2Raw}`}
+                className="rounded-full border border-white/30 px-8 py-3 text-sm font-semibold text-white transition hover:border-school-gold hover:text-school-gold"
+              >
+                📞 {schoolInfo.contact.phone2}
+              </a>
             </div>
           </div>
         </div>

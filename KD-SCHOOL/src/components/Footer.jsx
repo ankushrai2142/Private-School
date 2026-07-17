@@ -1,10 +1,12 @@
 import { useEffect, useRef, useState } from "react";
 import { schoolInfo, navLinks } from "../data/schoolData";
+import logo from "../assets/images/LOGO-1.jpeg";
 import WhatsAppIcon from "./icons/WhatsAppIcon";
 
 const contactItems = [
   { icon: "📍", text: schoolInfo.address.full },
   { icon: "📞", text: schoolInfo.contact.phone, href: `tel:${schoolInfo.contact.phoneRaw}` },
+  { icon: "📞", text: schoolInfo.contact.phone2, href: `tel:${schoolInfo.contact.phone2Raw}` },
   { icon: "📌", text: `PIN: ${schoolInfo.address.pincode}` },
   { icon: "🏛️", text: "District: Kushinagar, U.P." },
 ];
@@ -105,9 +107,11 @@ export default function Footer() {
             <div className="flex items-center gap-3">
               <div className="relative">
                 <div className="absolute inset-0 rounded-full bg-school-gold/30 blur-md" />
-                <div className="relative flex h-14 w-14 items-center justify-center rounded-full bg-gradient-to-br from-school-gold to-amber-400 text-xl font-black text-school-navy shadow-lg">
-                  KD
-                </div>
+                <img
+                  src={logo}
+                  alt={`${schoolInfo.name} logo`}
+                  className="relative h-14 w-14 rounded-full object-cover ring-2 ring-school-gold/40"
+                />
               </div>
               <div>
                 <p className="text-lg font-bold">{schoolInfo.name}</p>

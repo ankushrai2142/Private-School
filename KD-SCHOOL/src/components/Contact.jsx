@@ -21,12 +21,21 @@ const contactDetails = [
     icon: "📞",
     title: "Phone",
     content: (
-      <a
-        href={`tel:${schoolInfo.contact.phoneRaw}`}
-        className="font-semibold text-school-blue transition hover:text-school-gold"
-      >
-        {schoolInfo.contact.phone}
-      </a>
+      <>
+        <a
+          href={`tel:${schoolInfo.contact.phoneRaw}`}
+          className="font-semibold text-school-blue transition hover:text-school-gold"
+        >
+          {schoolInfo.contact.phone}
+        </a>
+        <br />
+        <a
+          href={`tel:${schoolInfo.contact.phone2Raw}`}
+          className="font-semibold text-school-blue transition hover:text-school-gold"
+        >
+          {schoolInfo.contact.phone2}
+        </a>
+      </>
     ),
     color: "from-school-gold to-amber-400",
   },
@@ -249,52 +258,6 @@ export default function Contact() {
           </div>
         </div>
 
-        {/* Nearby schools */}
-        <div
-          className={`mt-20 transition-all duration-1000 delay-700 ${
-            isVisible ? "translate-y-0 opacity-100" : "translate-y-10 opacity-0"
-          }`}
-        >
-          <div className="text-center">
-            <span className="text-sm font-semibold uppercase tracking-widest text-school-gold">
-              In the Area
-            </span>
-            <h3 className="mt-2 text-2xl font-bold text-school-navy sm:text-3xl">
-              Nearby Educational Institutions
-            </h3>
-          </div>
-
-          <div className="mt-10 grid gap-5 sm:grid-cols-3">
-            {schoolInfo.nearbySchools.map((school, index) => (
-              <div
-                key={school.name}
-                className="academic-card group overflow-hidden rounded-2xl border border-school-gold/10 bg-white p-6 shadow-sm transition-all duration-300 hover:-translate-y-2 hover:border-school-gold/30 hover:shadow-xl"
-                style={{
-                  transitionDelay: `${index * 120 + 900}ms`,
-                  opacity: isVisible ? 1 : 0,
-                  transform: isVisible ? "translateY(0)" : "translateY(32px)",
-                }}
-              >
-                <div className="flex items-start justify-between">
-                  <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-school-cream text-lg transition-transform group-hover:scale-110">
-                    🏫
-                  </div>
-                  <span className="rounded-full bg-school-gold/10 px-2.5 py-0.5 text-xs font-bold text-school-gold">
-                    ★ {school.rating}
-                  </span>
-                </div>
-                <h4 className="mt-4 font-bold text-school-navy transition-colors group-hover:text-school-blue">
-                  {school.name}
-                </h4>
-                <p className="mt-2 text-xs leading-relaxed text-gray-500">
-                  {school.address}
-                </p>
-                <div className="mt-4 h-0.5 w-0 rounded-full bg-gradient-to-r from-school-gold to-school-navy transition-all duration-500 group-hover:w-full" />
-              </div>
-            ))}
-          </div>
-        </div>
-
         {/* Bottom CTA */}
         <div
           className={`relative mt-16 overflow-hidden rounded-3xl transition-all duration-1000 delay-900 ${
@@ -313,12 +276,20 @@ export default function Contact() {
                 Have questions? Call or visit us today!
               </p>
             </div>
-            <a
-              href={`tel:${schoolInfo.contact.phoneRaw}`}
-              className="admission-cta-glow shrink-0 rounded-full bg-gradient-to-r from-school-gold to-amber-400 px-8 py-3 text-sm font-bold text-school-navy transition hover:scale-105"
-            >
-              📞 {schoolInfo.contact.phone}
-            </a>
+            <div className="flex flex-col gap-2 sm:items-end">
+              <a
+                href={`tel:${schoolInfo.contact.phoneRaw}`}
+                className="admission-cta-glow shrink-0 rounded-full bg-gradient-to-r from-school-gold to-amber-400 px-8 py-3 text-sm font-bold text-school-navy transition hover:scale-105"
+              >
+                📞 {schoolInfo.contact.phone}
+              </a>
+              <a
+                href={`tel:${schoolInfo.contact.phone2Raw}`}
+                className="shrink-0 rounded-full border border-school-gold/40 px-8 py-3 text-sm font-bold text-school-gold transition hover:bg-school-gold/10"
+              >
+                📞 {schoolInfo.contact.phone2}
+              </a>
+            </div>
           </div>
         </div>
       </div>

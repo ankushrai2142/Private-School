@@ -72,6 +72,8 @@ export const schoolInfo = {
   contact: {
     phone: "+91 74085 31545",
     phoneRaw: "917408531545",
+    phone2: "+91 95652 56647",
+    phone2Raw: "919565256647",
     whatsapp: "917408531545",
   },
   rating: {
@@ -101,23 +103,6 @@ export const schoolInfo = {
     "Pipra Kanak",
     "Sohang",
     "Sumahi Khurd",
-  ],
-  nearbySchools: [
-    {
-      name: "Glorious Academy Fazilnagar",
-      address: "Fazilnagar, Uttar Pradesh 274401",
-      rating: 4.5,
-    },
-    {
-      name: "Sanskar Central Academy",
-      address: "Durga Bhawan, NH 28, Fazilnagar, Uttar Pradesh 274401",
-      rating: 4.2,
-    },
-    {
-      name: "Intelligent Public School",
-      address: "Lachhiya, Kushinagar District, Uttar Pradesh 274401",
-      rating: 4.5,
-    },
   ],
   googleMapsUrl:
     "https://www.google.com/search?kgmid=%2Fg%2F11g8nmc2c5&hl=en-IN&q=K.D+PUBLIC+SCHOOL+%2CFAZILNAGAR%2CKUSHINAGAR(U.P)",

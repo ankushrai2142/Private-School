@@ -330,6 +330,12 @@ export default function Admission() {
                 {schoolInfo.contact.phone}
               </a>
               <a
+                href={`tel:${schoolInfo.contact.phone2Raw}`}
+                className="inline-flex items-center gap-3 rounded-full border border-school-gold/40 px-8 py-3 text-base font-bold text-school-gold transition hover:bg-school-gold/10"
+              >
+                📞 {schoolInfo.contact.phone2}
+              </a>
+              <a
                 href={`https://wa.me/${schoolInfo.contact.whatsapp}`}
                 target="_blank"
                 rel="noopener noreferrer"
