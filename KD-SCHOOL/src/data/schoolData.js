@@ -151,6 +151,12 @@ export const facilities = [
 
 export const academics = [
   {
+    level: "Pre Primary Education",
+    grades: "Nursery, LKG & UKG",
+    description:
+      "Play-based early learning focused on motor skills, language development, social interaction, and creative expression in a nurturing environment.",
+  },
+  {
     level: "Primary Education",
     grades: "Classes I – V",
     description:

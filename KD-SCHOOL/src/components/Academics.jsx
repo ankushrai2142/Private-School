@@ -3,6 +3,11 @@ import { academics, schoolInfo } from "../data/schoolData";
 
 const programMeta = [
   {
+    icon: "🧸",
+    color: "from-pink-400 to-school-gold",
+    subjects: ["Nursery", "LKG", "UKG", "Rhymes & Stories", "Art & Play"],
+  },
+  {
     icon: "🌟",
     color: "from-amber-400 to-school-gold",
     subjects: ["Hindi", "English", "Mathematics", "EVS", "Art & Craft"],
@@ -11,11 +16,6 @@ const programMeta = [
     icon: "📖",
     color: "from-school-blue to-school-navy",
     subjects: ["Science", "Social Studies", "Computer", "Sanskrit", "Sports"],
-  },
-  {
-    icon: "🎯",
-    color: "from-violet-500 to-school-blue",
-    subjects: ["Physics", "Chemistry", "Biology", "Board Prep", "Career Guidance"],
   },
 ];
 
@@ -88,8 +88,8 @@ export default function Academics() {
             </span>
           </h2>
           <p className="mx-auto mt-5 max-w-2xl text-base leading-relaxed text-gray-600">
-            Structured UP Board NCERT Pattern programs from primary to secondary
-            level for holistic student development.
+            Structured UP Board NCERT Pattern programs from pre-primary to middle
+            school for holistic student development.
           </p>
         </div>
 
@@ -252,7 +252,7 @@ export default function Academics() {
             </h3>
             <p className="mx-auto mt-4 max-w-2xl text-sm leading-relaxed text-white/75 sm:text-base">
               Offering quality education following UP Board NCERT Pattern from
-              primary through secondary levels for students in the Fazilnagar,
+              pre-primary through middle school levels for students in the Fazilnagar,
               Babu Bazar region.
             </p>
 
